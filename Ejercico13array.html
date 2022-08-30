@@ -1,0 +1,39 @@
+<!DOCTYPE html> 
+<html> 
+    <head>
+    </head>
+    <body style="background-color:black;">
+
+        <script> 
+            //ORDENAMIENTO BURBUJA
+            
+            lista = [9,3,5,2,4,7,1,8,6]; 
+            i = 0;
+            save = 0;
+
+            iteraciones = 0; //Bucle para calcular la cantidad de iteraciones que tienen que hacerse en el ordenamiento
+            j = lista.length-1;
+
+            while( j > 0){
+                iteraciones = lista[j];
+              
+                while(i < iteraciones){
+
+                    if(lista[i] > lista[i + 1]){
+                        save = lista[i + 1];
+                        lista[i + 1] = lista[i];
+                        lista[i] = save;
+                    }
+                    
+                    i++;
+                }
+                i = 0;
+                j--;
+
+            }
+            
+
+        </script>
+
+    </body>
+</html>

@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+    </head>
+    <body style="background-color: black;">
+        <script>
+            //MULTIPLICACION SIN OPERADOR
+
+            var numero1 = parseInt(prompt('Ingrese un numero'));
+            var numero2 = parseInt(prompt('Ingrese un segundo numero'));
+            incremento1 = numero1;
+            incremento2 = numero2;
+
+            if(numero1==1){
+                console.log(numero2);
+            }
+
+            if(numero2==1){
+                console.log(numero1);
+            }
+            
+            if(numero1==0){
+                console.log(numero1);
+            }
+
+            if(numero2==0){
+                console.log(numero2);
+            }
+
+            if(numero1>numero2 || numero1==numero2){
+
+                while(numero2>1){
+                    numero1 = numero1+incremento1;
+                    console.log(numero1);
+                    numero2--;
+                }
+
+            }
+
+            if(numero1<numero2){
+
+                while(numero1>1){
+                    numero2 = numero2+incremento2;
+                    console.log(numero2);
+                    numero1--;
+                }
+
+            }
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body style="background-color: black;">
+        <script>
+            //ORDENAMIENTO DE UN ARRAY
+            
+            lista = [12,1,5,2,2,10,0,1,22]; 
+            listaordenada = [];
+            bucle = 0;
+            bucle2 = lista.length;
+            mayor = 0;
+
+            while(listaordenada.length<bucle2){
+                while(bucle<=bucle2){
+                    if(mayor<=lista[bucle]) {
+                        mayor = lista[bucle];
+                    }
+                    bucle++;
+                }
+                
+                listaordenada.push(mayor);
+                lista.splice(lista.indexOf(mayor),1); //El primer numero es la posicion, y el segundo la cantidad que elimina en esa posicion
+                mayor = 0;
+                bucle = 0;
+            }
+            console.log(listaordenada);
+
+        </script>
+    </body>
+</html>

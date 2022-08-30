@@ -1,0 +1,31 @@
+<html>
+    <head>
+
+    </head>
+    <body style="background-color:black;">
+        <script>
+        //MULTIPLOS DE UN NUMERO
+
+            numero1=1; //Variable a incrementar
+            numero2=1; //Variable resto
+            var numero3 = prompt("Ingrese un numero"); //Cantidad de numeros a imprimir
+
+            while(numero1<numero3) {
+
+                while(numero2<=numero1){
+                    if((numero1%numero2)==0){
+                        console.log(numero1, 'Tiene los siguientes multiplos', numero2);
+                    }
+                    numero2++;
+                }
+                
+                if(numero1%numero2!=0){
+                    console.log('-');
+                }   
+                numero2=0;
+                numero1++;
+            }
+            
+        </script>
+    </body>
+</html>
