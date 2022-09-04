@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body style="background-color: black;">
+        <script>
+
+            //FUNCION BUCLE PARA EL EJERCICIO 15
+
+            function capicua(texto){
+                let i = 0; let j = texto.length-1;
+                while(i < texto.length){
+                    if(texto[i] != texto[j]){
+                        return false;
+                    }
+                    i++;
+                    j--;
+                }
+                return true;
+            }
+
+            function bucle(){               
+                while(1){
+                    let textoB = prompt('Ingrese un string');
+                    capicua(textoB);
+                    if(capicua(textoB)){
+                        console.log('La palabra es capicua');
+                    }
+                    else{
+                        console.log('La palabra no es capicua');
+                    }
+                    let continuar = prompt('Si desea terminar el programa, ingrese "n"');
+                    if(continuar == 'n' || continuar == ''){
+                        break;
+                    }
+                }
+            }
+
+
+
+        </script>
+    </body>
+</html>
