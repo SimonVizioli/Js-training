@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body style="background-color:black;">
+        <script>
+            
+            capicua();
+
+            function capicua(texto){
+                var texto = prompt('Ingrese una palabra');
+                comparacion = [];
+                comparacion2 = [];
+                i = texto.length-1;
+                j = 0;
+                cont3 = 0;
+
+                while(i>=0){
+                    comparacion.push(texto[i]);
+                    i--;
+                    
+                }
+                while(j<texto.length){
+                    comparacion2.push(texto[j]);
+                    j++;
+                    
+                }
+
+                for(let k = 0; k<texto.length ; k++){
+                    if(comparacion[k] == comparacion2[k]){
+                        cont3++;
+                    }
+                }
+                if(cont3 == texto.length){
+                    return true;
+                }
+                else{
+                    return false;
+                }
+            }
+
+
+            
+
+        </script>
+    </body>
+</html>

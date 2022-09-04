@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body style="background-color:black;">
+        <script>        
+            //INGRESE UN STRING PARA SABER SI ES CAPICUA
+            
+            function capicua(texto){
+                let i = 0; let j = texto.length-1;
+
+                while(i < texto.length){
+                    if(texto[i] != texto[j]){
+                        return false;
+                    }
+                    i++;
+                    j--;
+                }
+                return true;
+            }
+         
+
+        </script>
+    </body>
+</html>
