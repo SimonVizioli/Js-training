@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body style="background-color:black ;">
+        <script>
+            //FUNCION DE ORDENAMIENTO BURBUJA
+
+            function ejecutar(){
+                let lista = [];
+                while(1){
+                    lista.push(parseInt(prompt('Ingrese un valor para agregar a la lista')));
+                    let continuar = prompt('Si desea terminar el programa, ingrese "n"');
+                    if(continuar == 'n' || continuar == ''){
+                        break;
+                    }
+                }
+                ordenar(lista);
+            }
+
+            function ordenar(lista){
+                let lista2 = [];
+                let i = 0;
+                let save = 0;
+
+                let iteraciones = lista.length; //Bucle para calcular la cantidad de iteraciones que tienen que hacerse en el ordenamiento
+                let j = 0;
+
+                let k = 0;
+                while(k < lista.length){
+                    lista2.push(lista[k]);
+                    k++;
+                    if(k == lista.length){
+                        break;
+                    }
+                }
+
+                while(j < lista.length){
+                    while(i < iteraciones){
+                        
+                        if(lista2[i] > lista2[i + 1]){
+                            save = lista2[i + 1];
+                            lista2[i + 1] = lista2[i];
+                            lista2[i] = save;
+                        }
+                        i++;
+                    }
+                iteraciones--;
+                i = 0;
+                j++;
+                } 
+                console.log('Lista ingresada', lista);
+                console.log('Lista ordenada',lista2);  
+            }
+
+        </script>
+    </body>
+</html>

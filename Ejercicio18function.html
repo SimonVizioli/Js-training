@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body style="background-color: black;">
+        <script>
+
+            //FUNCION SUMA DE LOS VALORES DE UN ARRAY
+
+            function ejecutar(){
+                let lista = [];
+                while(1){
+                    lista.push(parseInt(prompt('Ingrese un valor para agregar a la lista')));
+                    let continuar = prompt('Si desea terminar el programa, ingrese "n"');
+                    if(continuar == 'n' || continuar == ''){
+                        break;
+                    }
+                }
+                console.log(lista);
+                sumaA(lista);
+            }
+
+            function sumaA(lista){
+                let i = 0;
+                let suma = 0;
+                
+                while(i < lista.length){
+                    suma = suma + lista[i];
+                    i++;
+                }
+                console.log(suma);
+            }
+
+        </script>
+    </body>
+</html>
